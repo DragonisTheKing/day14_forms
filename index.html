@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Forms</title>
+    <title>JavaScript Forms: Two Truths & A Lie</title>
 </head>
-<body>
-    
+<body style="background-color: aquamarine;">
+    <h1>Yuvi's Two Truths and a Lie game.</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname"><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lname" id="lname"><br />
+        <label for="age">Age:</label><br />
+        <input type="number" name="age" id="age"><br />
+    </form>
+    <br />
+    <input type="button" value="SUBMIT" onclick="greet();"><br />
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+    <h2>Warm up Trivia!</h2>
+    <p>What is the only food that CANNOT go bad?</p>
+    <p id="trivia1-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia1" id="wine">
+        <label for="wine">Wine</label><br />
+        <input type="radio" name="trivia1" id="rabbit">
+        <label for="rabbit">Rabbit Feet</label><br />
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br />
+    </form>
+    <br /><input type="button" value="SUBMIT" id="trivia1-answer" onclick="trivia1();">
+
+
+    <script src="javascript/truth.js"></script>
 </body>
 </html>
