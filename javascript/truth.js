@@ -25,3 +25,19 @@ function trivia1() {
         triviaAnswer.innerHTML = fname + ", you are right! You are a God among men, you shall be promoted to my senior, you are probably the most handsome, funny, intelligent, smart, cool, auraful, rizzy, divine, pristine person to have ever lived. Love you!"
     }
 }
+
+function trivia2() {
+    let nextAnswer = document.getElementById("trivia2-answer");
+    let oneSelected = document.getElementById("exist").checked;
+    let twoSelected = document.getElementById("neel").checked;
+    let threeSelected = document.getElementById("life").checked; 
+    if (oneSelected) {
+        nextAnswer.innerHTML = "Re-think your choices, " + fname + ". Obviously I have an addiction to existing. Literally everyone does. Duhhhhhhhhhhhh!"
+    }
+    else if (twoSelected) {
+        nextAnswer.innerHTML = "Yes, " + fname + ", that was the lie. I don't typically enjoy painting chairs."
+    }
+    else if (threeSelected) {
+        nextAnswer.innerHTML = fname + ", That is SO Rude! Do you think I was born six days ago? Does this website LOOK like it was made by a baby? You are wrong."
+    }
+}
